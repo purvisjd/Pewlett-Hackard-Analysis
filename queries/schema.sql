@@ -51,5 +51,5 @@ Create table titles (
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	foreign key (emp_no) references employees (emp_no),
-	primary key (emp_no)
+	primary key (emp_no, title, from_date)
 );
